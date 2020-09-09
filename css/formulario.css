@@ -1,0 +1,75 @@
+#registro{ width: 50%; margin:0 auto; padding: 1rem; box-shadow: 5px 5px 10px gray; }
+
+form{ margin-top: 1rem;}
+fieldset{ border:none;}
+fieldset legend { font-size:1.5rem;}
+fieldset fieldset legend{ text-indent: -9999px; display:block; height: .001rem;}
+.adicionalCampo{display: block; font-size:.8rem; color:#666;}
+form table{ width: 100%; }
+form table td{vertical-align:top; padding:.5rem 0;}
+
+form table tr:last-child td:last-child{ text-align: right; }
+
+form input, select, textarea{width:calc(100% - 1rem); padding:.15rem .5rem; border-radius:.5rem; border:solid .05rem gray; display:block;}
+
+form input[type=button], form button, input[type=submit]{ 
+  background:linear-gradient(to bottom, #ddd 5%, #eee 100%);
+  background-color:#ddd;
+  border:1px solid #ccc;
+  display:inline-block;
+  cursor:pointer;
+  color:#333;
+  padding: 4px;
+  text-decoration:none;
+  border-radius:10px;
+  width: 5rem;
+}
+form input[type=button]:hover, form button:hover, input[type=submit]:hover, 
+form input[type=button]:focus, form button:focus, input[type=submit]:focus{ 
+  background:linear-gradient(to bottom, #eee 5%, #ddd 100%);
+  background-color:#ddd;
+}
+
+input[name=tellada]{ width: 50px; display: inline;}
+input[name=telnum]{ width: 200px; display: inline;}
+
+input[type=checkbox]:hover,input[type=checkbox]:focus,input[type=radio]:hover,input[type=radio]:focus{outline:none;}
+input[type=checkbox],input[type=radio]{width:20px !important; padding-left:10px !important; display:inline; }
+input[type=checkbox] + label, input[type=radio] + label
+	{  padding-left:20px !important; margin-left:-25px !important; padding-right:5px; margin-right: 5px;}
+
+input[type="checkbox"]:focus + label,  
+input[type="checkbox"]:hover + label, 
+input[type="radio"]:focus + label,  
+input[type="radio"]:hover + label
+	{ outline:none; border-radius:.5rem; border:solid black 3px; background-color:rgba(0,0,0,.1); }
+
+option:hover .opBg, option:focus{ color:white;  background:#44f!important; display:block; width:100%; z-index:0;}
+
+#mensajes{
+  display:none;
+  padding:1em;
+  border-radius: .5em;
+  border: .1em solid #850A29;
+  font-size: .8em;
+  background:#ffe8e8;   
+  margin-bottom: 1em; 
+}
+
+#mensajes a{
+  line-height: 150%;
+  color:#450B0B;
+}
+
+#mensajes[tabindex="0"]{
+  display: block;
+}
+
+#mensajes ul{
+  padding:0; 
+  list-style:none;
+}
+
+@media only screen and (max-width:1000px){
+  #registro{width: 95%;}
+}
