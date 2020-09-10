@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar ejemplos de WAI-ARIA</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <form id="form1" name="form1" method="post" action="imeiForm.html">
+
+            <fieldset style="width:30em;"><legend>Registrarse para obtener la informacion</legend>
+            <label for="nom">Nombre de Usuario:</label>
+            <input type="text" maxlength="15" name="imeiNumber" class="azulado" id="nom"><br>
+                                
+            <label for="imeiNum">* Clave (requerido):</label>
+            <input type="text" aria-describedby="info" maxlength="15" name="imeiNumber" class="azulado" id="imeiNum">
+            <br>
+            <span id="info">La Clave debe cumplir lo siguiente:<br>
+                Incluir caracteres en mayúscula y en minúscula.<br>
+                Incluir al menos un número o un símbolo.<br>
+                Tener al menos 8 caracteres.</span><br>
+            <input type="button" value="Enviar" class="boton" id="btnConsulta">
+            </fieldset>
+                            </form>
+<br><br><br>
+                            <div>            
+                                <a href="index.html" class="btn btn-primary btn-sm" role="button">Página Inicial</a>
+                            </div>
+    </div>
+    
+</body>
+</html>

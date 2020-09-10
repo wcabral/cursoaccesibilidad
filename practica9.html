@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupar elementos checkbox en un fieldset y legend</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="icon" href="favicon.ico">
+        <style>
+            ul.checkbox li:hover,
+  ul.checkbox li.focus  {
+    background-color: lightyellow; 
+    border: 1px gray solid; 
+    width: 10em; 
+    text-decoration:underline; 
+  }
+
+
+        </style>
+</head>
+<body>
+    <div class="container">
+        <fieldset class="border border-light">
+            <legend class="label">Seleccione los ingredientes de la pizza</legend>
+           
+            <ul class="checkbox">
+              <li>
+               <input type="checkbox" id="cb1" value="pepperoni" onfocus="parentFocus(event)" onblur="parentBlur(event)"/>
+                 <label for="cb1">Pepperoni</label>
+              </li>
+              <li>
+               <input type="checkbox" id="cb2" value="sausage" onfocus="parentFocus(event)" onblur="parentBlur(event)"/>
+                 <label for="cb2">Salchicha</label>
+              </li>
+              <li>
+               <input type="checkbox" id="cb3" value="mushrooms" onfocus="parentFocus(event)" onblur="parentBlur(event)"/>
+                 <label for="cb3">Hongos</label>
+              </li>
+              <li>
+               <input type="checkbox" id="cb4" value="onions" onfocus="parentFocus(event)" onblur="parentBlur(event)"/>
+                 <label for="cb4">Cebolla</label>
+              </li>
+              <li>
+               <input type="checkbox" id="cb5" value="gpeppers" onfocus="parentFocus(event)" onblur="parentBlur(event)"/>
+                 <label for="cb5">Piña</label>
+              </li>
+            </ul> 
+            </fieldset>
+
+            <div>            
+                <a href="index.html" class="btn btn-primary btn-sm" role="button">Página Inicial</a>
+            </div>
+    </div>
+    
+       
+</body>
+</html>
