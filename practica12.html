@@ -13,7 +13,9 @@
                 display: inline-block;
                 
             } 
+            
         </style> 
+        <link rel="stylesheet" href="css/formulario.css">  
 </head>
 <body>
     <div class="container">
@@ -69,13 +71,102 @@
                 <img src="imagenes/instagram.jpeg" class="rounded" style="height: 100px; width: 100px;" alt="Instagram de Wilson Cabral y Carmelo Tangui">
                 <span class="oculto">Síguenos en Instagram de Wilson Cabral y Carmelo Tangui, esto lo guiara a otra página</span>
             </a>      
-            <br>
-            <br>
-            <div >            
-                <a href="index.html" class="btn btn-primary btn-sm" role="button">Página Inicial</a>
-            </div>
+         
         </div> 
           
+        <hr>
+
+        <div id="registro">  
+            <h3>Llene el Formulario por Favor</h3>      
+            <form action="index.html" name="registro">
+                <fieldset>
+                    <legend>Registro de Cliente</legend>
+                    <table role="presentation">
+                        <tbody><tr>
+                        <td><label for="nombre">*Nombre: </label></td>
+                        <td>
+                            <input type="text" name="nombre" id="nombre" aria-describedby="ejnombre">
+                            <span class="adicionalCampo" id="ejnombre">Ejemplo: Wilson Cabral</span></td></tr>
+    
+                        <tr>
+                        <td><label for="edad">Edad: </label></td>
+                        <td>
+                            <input type="number" name="edad" id="edad" aria-describedby="ejedad">
+                            <span class="adicionalCampo" id="ejedad">Sólo ingresar números, ejemplo: 27</span></td></tr>
+    
+                        <tr>
+                        <td>Sexo</td>
+                        <td>
+                            <fieldset><legend>Género: </legend>
+                            <input type="radio" name="genero" id="gm" value="mujer"> <label for="gm">Mujer</label>&emsp;
+                            <input type="radio" name="genero" id="gh" value="hombre"> <label for="gh">Hombre</label>&emsp;
+                            </fieldset>
+                            </td></tr>
+    
+                        <tr>
+                        <td><label for="pais">País: </label></td>
+                        <td>
+                            <select name="pais" id="pais">
+                                <option value="DR">República Dominicana</option>
+                                <option value="HA">Haiti</option>
+                                <option value="PR">Puerto Rico</option>
+                                <option value="CU">Cuba</option>
+                                <option value="JA">Jamaica</option>
+                            </select>
+                            </td></tr>
+    
+                        <tr>
+                        <td><label for="correo">*Correo: </label></td>
+                        <td>
+                            <input type="text" name="correo" id="correo" aria-describedby="ejcorreo">
+                            <span class="adicionalCampo" id="ejcorreo">Ejemplo: ctangui@banreservas.com</span></td></tr>
+    
+                        <tr>
+                        <td>Teléfono:</td>
+                        <td>
+                            <fieldset><legend>Número de telefono con lada: </legend>
+                            <input type="text" name="tellada" id="tellada" aria-label="lada"> - <input type="text" name="telnum" id="telnum" aria-label="número">
+                            </fieldset>
+                            </td></tr>
+    
+                        <tr>
+                        <td>Temas de interés</td>
+                        <td>
+                            <fieldset><legend>Temas de interés: </legend>
+                            <input type="checkbox" name="temInt" id="tct"> <label for="tct">Ciencia y tecnología</label><br>
+                            <input type="checkbox" name="temInt" id="tma"> <label for="tma">Música y artes</label><br>
+                            <input type="checkbox" name="temInt" id="tcr"> <label for="tcr">Cocina y repostería</label><br>
+                            <input type="checkbox" name="temInt" id="tli"> <label for="tli">Literatura</label><br>
+                            <input type="checkbox" name="temInt" id="tvi"> <label for="tvi">Viajes</label>
+                            </fieldset>
+                            </td></tr>
+    
+                        <tr>
+                        <td colspan="2"><label for="sobreTi">Algo sobre ti:</label><br>
+                            <input type="text" name="sobreTi" id="sobreTi">
+                            </td></tr>
+    
+                        <tr>
+                        <td><label for="pwd">*Contraseña: </label></td>
+                        <td>
+                            <input type="password" name="pwd" id="pwd" aria-describedby="pwd_desc">
+                            <span class="adicionalCampo" id="pwd_desc">Deberá componerse de 8 a 12 caracteres, contener al menos una mayúscula, una minúscula, un número, un caracter especial y sin espacios</span></td></tr>
+    
+                        <tr>
+                        <td colspan="2">
+                            <input type="checkbox" name="terminos" id="terminos">
+                            <label for="terminos">*Acepto los <a href="index.html" target="_blank" title="se abrirá en otra pestaña">términos y condiciones</a></label></td></tr>
+    
+                        <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" name="enviar" value="Enviar" id="enviar" onclick="valida();">
+                            </td></tr>
+    
+                    </tbody></table>
+                </fieldset>
+            </form>
+        </div>
           
     </div>
 </body>
